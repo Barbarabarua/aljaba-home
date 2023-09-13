@@ -13,10 +13,10 @@ const App = () => {
       <Navbar/>
       
       <Routes>
-        <Route exact patch='/' element={<ItemListContainer/>}/>
-        <Route exact patch='/cart' element={<Cart/>}/>
-        <Route exact patch='/categoria/:id' element={<ItemListContainer/>}/>
-        <Route exact patch='/item/:id' element={<ItemDetailContainer/>}/>
+        <Route exact path='/' element={<ItemListContainer/>}/>
+        <Route exact path='/cart' element={<Cart/>}/>
+        <Route exact path='/categoria/:id' element={<ItemListContainer/>}/>
+        <Route exact path="/item/:id" element={<ItemDetailContainer/>}/>
 
     {/*<ItemListContainer greeting={"Bienvenido a la tienda online de Aljaba Home."}/>
     */}

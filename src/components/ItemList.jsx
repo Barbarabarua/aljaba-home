@@ -15,4 +15,3 @@ const ItemList = ({ productos }) => {
 };
 
 export default ItemList;
-``

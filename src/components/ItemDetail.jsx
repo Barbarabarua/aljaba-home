@@ -2,10 +2,11 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React, { memo } from 'react';
-import { useParams } from 'react-router-dom';
 import ItemCount from './ItemCount';
 import { CardHeader, CardBody, CardFooter, Heading, Text, Button, Center } from '@chakra-ui/react';
+import { useParams } from 'react-router-dom';
 
+// eslint-disable-next-line react-refresh/only-export-components
 const ItemDetail = ({ productos }) => {
   const { id } = useParams();
   const filteredProducts = productos.filter(producto => producto.id == id);
@@ -21,8 +22,9 @@ const ItemDetail = ({ productos }) => {
                   <Heading size='md'>{p.nombre}</Heading>
                 </CardHeader>
                 <CardBody>
+                  <Image>{p.image}</Image>
                   <Text>{p.description}</Text>
-                  <Text>{p.category}</Text>
+                  <Text>{p.categoria}</Text>
                 </CardBody>
                 <CardFooter>
                   <ItemCount />

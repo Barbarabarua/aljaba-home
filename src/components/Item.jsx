@@ -20,9 +20,11 @@ const Item = ({ producto }) => {
                     <Image
                         // eslint-disable-next-line react/prop-types
                         src={producto.image}
-
                         borderRadius='lg'
-                    />
+                        boxSize='150px'
+                        objectFit='cover'
+                        alt='Aljaba-Home'
+                      />
                     <Stack>
                         <Heading size='md'>{producto.nombre}</Heading>
                         <Text>
