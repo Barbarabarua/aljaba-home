@@ -23,7 +23,7 @@ const ItemDetail = ({ productos }) => {
                 </CardHeader>
                 <CardBody>
                   <Image>{p.image}</Image>
-                  <Text>{p.description}</Text>
+                  <Text>Ingredientes:{p.description}</Text>
                   <Text>{p.categoria}</Text>
                 </CardBody>
                 <CardFooter>
